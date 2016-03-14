@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>Minesweeper</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="jquery-ui/themes/base/jquery.ui.all.css">
+    <style>
+      body {
+        background-color: lightgray;
+      }   
+      .ui-slider-horizontal {
+        height: 0.5em;
+        
+      } 
+      .ui-slider .ui-slider-handle {
+        height: 1em;
+        text-align:center;
+        font-size: 75%;       
+      }
+      #mineCount {
+        width: 150px;
+        margin: 5px auto;
+      }
+      #gameArea {
+        position: relative;
+        min-height: 150px;
+      } 
+      #settings {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      #field {
+        margin: 5px auto;
+        border-collapse: collapse;
+        border: 3px solid black;
+        display: none;
+      } 
+      #field td {
+        width: 35px;
+        height: 39px;
+        border: 1px solid black;
+        text-align: center;
+        padding: 3px;
+        background: no-repeat 50% 50%;
+      }
+      #field td.selected {
+        background-color: #eee;
+      }
+      #field td.mine {
+        /* background-color: pink; */
+        background-image: url(icons/letter_m.png);
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+	<script src="jquery-ui/ui/jquery.ui.core.js"></script>
+	<script src="jquery-ui/ui/jquery.ui.widget.js"></script>
+	<script src="jquery-ui/ui/jquery.ui.tabs.js"></script>
+	<script src="jquery-ui/ui/jquery.ui.mouse.js"></script>
+	<script src="jquery-ui/ui/jquery.ui.slider.js"></script>
+    <script src="jquery-ui/ui/jquery.ui.progressbar.js"></script>
+
+    <script src="game.js"></script>     
+  </head>  
+  <body>
+
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Play Game</a></li>
+		<li><a href="#tabs-2">HELP</a></li>
+		<li><a href="#tabs-3">High scores</a></li> 
+                <!-- <li><a href="scores.html">High scores</a></li> -->
+	</ul>
+	<div id="tabs-1">
+	  <div id="gameArea">
+		  <div id="settings">
+		  Width : <div id="w" class="slider"></div>
+		  Height: <div id="h" class="slider"></div>
+		  Level : 
+		   <select id="level">
+		     <option value="1">Easy</option>
+		     <option value="2">Medium</option>
+		     <option value="3">Hard</option>
+		   </select><br>
+		  <button id="start">START</button>
+		  </div>
+		  <div id="mineCount"></div>
+		  <table id="field">
+		  <tbody></tbody>
+		  </table
+	</div>
+	<div id="tabs-2">
+		<h2>Game Rules</h2>
+                <p>Minesweeper is played ....</p>
+	</div>
+        
+	<div id="tabs-3">
+	  <ul id="scores"></ul>
+	</div>
+        
+</div>
+
+  </body>
+
+
+
+
+
+
+
+
+
+</html>

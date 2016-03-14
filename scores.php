@@ -1,0 +1,1 @@
+{"ali":85,"veli":45,"izzet":34,"ali1":85,"veli1":45,"izzet1":34,"ali2":85,"veli2":45,"izzet2":34,"ali3":85,"veli3":45,"izzet3":34,"ali4":85,"veli4":45,"izzet4":34,"ali5":85,"veli5":45,"izzet5":34,"ali6":85,"veli6":45,"izzet6":34}

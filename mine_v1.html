@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Minesweeper</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style>
+      body {
+        background-color: lightgray;
+      }     
+      #field {
+        margin: 5px auto;
+        border-collapse: collapse;
+        border: 3px solid black;
+      } 
+      #field td {
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        text-align: center;
+        padding: 3px;
+      }
+      .selected {
+        background-color: #eee;
+      }
+      .mine {
+        background-color: pink;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
+    <script src="game.js"></script>     
+  </head>  
+  <body>
+  <table id="field">
+  <tbody></tbody>
+  </table>
+  </body>
+</html>
